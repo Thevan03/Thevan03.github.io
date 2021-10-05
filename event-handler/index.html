@@ -9,11 +9,22 @@
   <body>
     <h1>JS Event Handling</h1>
 
-    <label for="namaPengguna">Create Username</label>
+    <label for="namaPengguna">Create Username : </label>
     <input type="text" id="namaPengguna" />
 
-    <label for="katalaluan">Enter Password</label>
+    <label for="katalaluan">Enter Password : </label>
     <input type="password" id="katalaluan" />
+
+    <a onclick="sayHi()" href="https://www.metallica.com" target="_blank"
+      >Metallica</a
+    >
+
+    <script>
+      function sayHi() {
+        event.preventDefault();
+        alert("Hi! We stopped the default event!");
+      }
+    </script>
 
     <script src="js/events.js"></script>
   </body>
