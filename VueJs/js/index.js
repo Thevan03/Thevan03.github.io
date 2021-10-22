@@ -45,5 +45,23 @@ let app5 = new Vue({
   el: "#app5",
   data: {
     message: "Hello World!",
+    groceryList: [
+      {
+        id: 1,
+        desc: "Rocket Salad",
+      },
+      {
+        id: 2,
+        desc: "Cheese",
+      },
+      {
+        id: 3,
+        desc: "Ramen",
+      },
+      {
+        id: 4,
+        desc: "Ice Lemon Tea",
+      },
+    ],
   },
 });
