@@ -1,4 +1,5 @@
 let calculate = document.getElementById("cal");
+let refresh = document.getElementById("refresh");
 
 calculate.addEventListener("click", function () {
   let num = document.getElementById("num");
@@ -19,4 +20,8 @@ calculate.addEventListener("click", function () {
         "<br><br> Have a nice day!!";
     }
   }
+});
+
+refresh.addEventListener("click", function () {
+  location.reload();
 });
