@@ -16,7 +16,7 @@ calculate.addEventListener("click", function () {
         num.value +
         ") = " +
         f_ans +
-        "<br><br> Thank you for using our service!!";
+        "<br><br> Have a nice day!!";
     }
   }
 });
