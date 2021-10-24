@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel</title>
+  </head>
+  <body>
+    <h1>Count Vowel</h1>
+
+    <h2>
+      This page allows you to counts the number of vowels within the string
+    </h2>
+
+    <input type="text" id="word" placeholder="Enter word" />
+    <button onclick="myVowel()">Continue</button>
+
+    <script>
+      function myVowel() {
+        let word = document.getElementById("word");
+        let word_split = word.value.toLowerCase().split("");
+        let vowel = ["a", "e", "i", "o", "u"];
+        let count = 0;
+
+        if (isNaN(word.value)) {
+          for (i = 0; i < word_split.length; i++) {
+            if (vowel.includes(word_split[i])) {
+              count++;
+            }
+          }
+          alert("Number of vowels in '" + word.value + "' is " + count);
+        } else {
+          alert("Error!!! Please enter word.");
+        }
+      }
+    </script>
+  </body>
+</html>
