@@ -22,23 +22,20 @@ function GetBooking() {
 
       //load all rows from Sheety API
       for (let i = 0; i < json.bookings.length; i++) {
-        let gId = json.bookings[i].id;
         let gName = json.bookings[i].name;
         let gEmail = json.bookings[i].email;
-        let gRoom = json.bookings[i].room;
-        let gLocation = json.bookings[i].location;
+        let gPax = json.bookings[i].pax;
         let gRemarks = json.bookings[i].remarks;
-
+        let gId = json.bookings[i].id;
         let btnId = "delete" + gId;
 
         let row = bookingNameList.insertRow(bookingNameList.rows.length);
         row.insertCell(0).innerHTML = gId;
         row.insertCell(1).innerHTML = gName;
         row.insertCell(2).innerHTML = gEmail;
-        row.insertCell(3).innerHTML = gRoom;
-        row.insertCell(4).innerHTML = gLocation;
-        row.insertCell(5).innerHTML = gRemarks;
-        row.insertCell(6).innerHTML =
+        row.insertCell(3).innerHTML = gPax;
+        row.insertCell(4).innerHTML = gRemarks;
+        row.insertCell(5).innerHTML =
           "<button id='" +
           btnId +
           "'type='button' class='btn btn-danger'>Delete</button>";
